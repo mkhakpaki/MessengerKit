@@ -95,7 +95,7 @@ open class MSGPlaceholderTextView: UIView {
     }
     
     private func setup() {
-        addSubviews()
+//        addSubviews()
         styleLabel()
         styleTextView()
     }
@@ -111,9 +111,8 @@ open class MSGPlaceholderTextView: UIView {
         label.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         label.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        label.backgroundColor = UIColor.yellow
-        addSubview(textView)
         
+        addSubview(textView)
         textView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         textView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         textView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
