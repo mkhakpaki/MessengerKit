@@ -108,10 +108,10 @@ open class MSGPlaceholderTextView: UIView {
         addSubview(label)
         
         label.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
+        label.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         label.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        
+        label.backgroundColor = UIColor.yellow
         addSubview(textView)
         
         textView.topAnchor.constraint(equalTo: topAnchor).isActive = true
@@ -125,6 +125,7 @@ open class MSGPlaceholderTextView: UIView {
         label.text = placeholder
         label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
         label.textColor = .lightGray
+        label.textAlignment = .right
     }
     
     private func styleTextView() {
